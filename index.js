@@ -52,6 +52,22 @@ var ans2 = prompt("Is CodeFellows awesome?");
 
 alert("Okay, final question!");
 
+//Okay, got it WORKING thanks to sam's marker board explanation
+
+var while5 = false;
+while (while5 === false) {
+
+var ans5 = prompt("test test")
+  if (ans5 === 'y') {
+    alert("YES!")
+    while5 = true;
+  }
+
+  else {
+    alert("NO")
+  }
+}
+
 // Can't quite get this to loop, I tried a few different methods but none worked.
 // God damn While loops, have a function instead.
 
