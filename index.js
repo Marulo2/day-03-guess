@@ -33,7 +33,7 @@ var ans2 = prompt("Is CodeFellows awesome?");
   }
 
   else {
-    alert("Are you kidding me? You'd better just be testing parameters here. Minus points for you!")
+    alert("Are you kidding me? You'd better just be testing parameters here. Minus points for you!");
     counter -= 100;
   }
 
@@ -51,22 +51,6 @@ var ans2 = prompt("Is CodeFellows awesome?");
     }
 
 alert("Okay, final question!");
-
-//Okay, got it WORKING thanks to sam's marker board explanation
-
-var while5 = false;
-while (while5 === false) {
-
-var ans5 = prompt("test test")
-  if (ans5 === 'y') {
-    alert("YES!")
-    while5 = true;
-  }
-
-  else {
-    alert("NO")
-  }
-}
 
 // Can't quite get this to loop, I tried a few different methods but none worked.
 // God damn While loops, have a function instead.
@@ -87,4 +71,20 @@ function gameStart() {
 
 function gameEnd() {
   alert("You've done well! The game is over!")
+}
+
+//Okay, got it WORKING thanks to sam's marker board explanation
+
+var while5 = false;
+while (while5 === false) {
+
+var ans5 = prompt("test test")
+  if (ans5 === 'y') {
+    alert("YES!")
+    while5 = true;
+  }
+
+  else {
+    alert("NO")
+  }
 }
