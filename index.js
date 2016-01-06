@@ -42,7 +42,7 @@ var ans2 = prompt("Is CodeFellows awesome?");
       alert("Sweet! Show it off duder/dudette!");
       alert("Plus major points!");
       counter += 36;
-      console.log("The user has " + counter + "points(s).");
+      console.log("The user has " + counter + " points(s).");
 
     }
 
@@ -52,11 +52,23 @@ var ans2 = prompt("Is CodeFellows awesome?");
 
 alert("Okay, final question!");
 
-var ans4 = prompt("You won't be able to leave until you get this one right! How many cats does Sam have?");
+// Can't quite get this to loop, I tried a few different methods but none worked.
+// God damn While loops, have a function instead.
+
+gameStart()
+function gameStart() {
+  var ans4 = prompt("You won't be able to leave until you get this one right! How many cats does Sam have?");
   if (ans4.toLowerCase() === 'three' || ans4 === '3') {
     alert("Great! You've been paying attention! Not that this detail was an important part of class... still! Good job!")
+    gameEnd()
   }
 
   else {
     alert("Oooooh, that is wrong! Try again!")
+    gameStart()
   }
+}
+
+function gameEnd() {
+  alert("You've done well! The game is over!")
+}
