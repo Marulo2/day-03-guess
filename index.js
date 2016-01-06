@@ -88,3 +88,6 @@ var ans5 = prompt("test test")
     alert("NO")
   }
 }
+
+//Okay this is just for the merge.
+//Okay this is just for the merge. Part two.
