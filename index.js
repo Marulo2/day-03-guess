@@ -50,6 +50,8 @@ var ans2 = prompt("Is CodeFellows awesome?");
       alert("Dang! You should try to get some!");
     }
 
+alert("Before we get to the last question, you currently have " + counter + " points!")
+
 alert("Okay, final question!");
 
 // Can't quite get this to loop, I tried a few different methods but none worked.
