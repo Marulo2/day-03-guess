@@ -11,7 +11,9 @@ var user = prompt("Can we please have your name?");
 alert("Welcome to the game, " + user + "!");
 alert("Let's get started!");
 
-var ans1 = prompt("Are there more than 3 food trucks in the near vicinity of CodeFellows?");
+q1();
+
+function q1() { var ans1 = prompt("Are there more than 3 food trucks in the near vicinity of CodeFellows?");
   if (ans1.toLowerCase() === 'y' || ans1.toLowerCase() === 'yes') {
     alert("That's right! And they are all fucking delicious!");
     alert("Good job, " + user + "! Let's hit the next question.");
@@ -23,8 +25,10 @@ var ans1 = prompt("Are there more than 3 food trucks in the near vicinity of Cod
     alert("Take a walk around the block and you'll find atleast three or four! Cheap and delicious!");
     alert("Oh well, let's move on!");
   }
+}
 
-var ans2 = prompt("Is CodeFellows awesome?");
+q2();
+function q2() { var ans2 = prompt("Is CodeFellows awesome?");
   if (ans2.toLowerCase() === 'y' || ans2.toLowerCase() === 'yes') {
     alert("Damn right it is! They keep ordering food too, holy crap!")
     alert("You're on a roll, " + user + "!")
@@ -36,8 +40,10 @@ var ans2 = prompt("Is CodeFellows awesome?");
     alert("Are you kidding me? You'd better just be testing parameters here. Minus points for you!");
     counter -= 100;
   }
+}
 
-  var ans3 = prompt("Did you grab any of the sweet CodeFellows merch?");
+q3();
+function q3() {  var ans3 = prompt("Did you grab any of the sweet CodeFellows merch?");
     if (ans3.toLowerCase() === 'y' || ans3.toLowerCase() === 'yes') {
       alert("Sweet! Show it off duder/dudette!");
       alert("Plus major points!");
@@ -49,7 +55,7 @@ var ans2 = prompt("Is CodeFellows awesome?");
     else {
       alert("Dang! You should try to get some!");
     }
-
+}
 alert("Before we get to the last question, you currently have " + counter + " points!")
 
 alert("Okay, final question!");
@@ -57,8 +63,8 @@ alert("Okay, final question!");
 // Can't quite get this to loop, I tried a few different methods but none worked.
 // God damn While loops, have a function instead.
 
-gameStart()
-function gameStart() {
+q4();
+function q4() {
   var ans4 = prompt("You won't be able to leave until you get this one right! How many cats does Sam have?");
   if (ans4.toLowerCase() === 'three' || ans4 === '3') {
     alert("Great! You've been paying attention! Not that this detail was an important part of class... still! Good job!")
@@ -67,7 +73,7 @@ function gameStart() {
 
   else {
     alert("Oooooh, that is wrong! Try again!")
-    gameStart()
+    q4()
   }
 }
 
@@ -77,19 +83,19 @@ function gameEnd() {
 
 //Okay, got it WORKING thanks to sam's marker board explanation
 
-var while5 = false;
-while (while5 === false) {
-
-var ans5 = prompt("test test")
-  if (ans5 === 'y') {
-    alert("YES!")
-    while5 = true;
-  }
-
-  else {
-    alert("NO")
-  }
-}
+// var while5 = false;
+// while (while5 === false) {
+//
+// var ans5 = prompt("test test")
+//   if (ans5 === 'y') {
+//     alert("YES!")
+//     while5 = true;
+//   }
+//
+//   else {
+//     alert("NO")
+//   }
+// }
 
 //Okay this is just for the merge.
 //Okay this is just for the merge. Part two.
